@@ -3,24 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package p5;
+package Task2;
 
-/**
- *
- * @author mukul
- */
 public class Laptop {
-    int power;
-    public Laptop(int pw)
-    {
-        power=pw;
-      
-        
-    }
-    public void getpower()
-    {
-          power-=1;
-        System.out.println("Laptop power consumption"+ power);
-    }
-            
+	int power;
+	public Laptop(int power) {
+		this.power=power;
+	}
+	
+	public void getPower(){
+		int rsperwatt=15*power;
+		System.out.println("Laptop usage price: Rs."+rsperwatt);
+	}
 }
