@@ -3,22 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package p5;
+package Task2;
 
-/**
- *
- * @author mukul
- */
 public class Camera {
-     int power;
-    public Camera(int pw)
-    {
-        power=pw;
-       
-    }
-    public void getpower()
-    {
-         power-=20;
-        System.out.println("Camera power consumption"+ power);
-    }
+	int power;
+	public Camera(int power){
+		this.power=power;
+	}
+	
+	public void getPower(){
+		int rsperwatt=20*power;
+		System.out.println("Camera usage price: Rs."+rsperwatt);
+	}
 }
